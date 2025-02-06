@@ -7,7 +7,7 @@ int main() {
     int codigo1, codigo2;
     char nome[15];
     float area;
-    int populacao;
+    char populacao;
     float PIB;
     int NPT;
     
