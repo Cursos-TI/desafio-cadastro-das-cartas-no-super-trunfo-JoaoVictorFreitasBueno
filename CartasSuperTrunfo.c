@@ -4,10 +4,10 @@
 
 int main() {
     
-    int codigo1, codigo2;
-    char nome[15];
+    char codigo1[1], codigo2[2];
+    char nome[20];
     float area;
-    char populacao;
+    int populacao;
     float PIB;
     int NPT;
     
@@ -28,13 +28,13 @@ int main() {
     scanf ("%d", &NPT);
 
     printf("Digite o Código do País: \n");
-    scanf ("%d", &codigo1);
+    scanf ("%s", &codigo1);
 
     printf("Digite o Código da Cidade: \n");
-    scanf ("%c", &codigo2);
+    scanf ("%s", &codigo2);
 
     printf ("-Nome da Cidade:%s \n", nome);
-    printf ("-Código da cidade:%d \n", codigo1, codigo2);
+    printf ("-Código da cidade:%s \n", codigo1, codigo2);
     printf ("-População:%d \n", populacao);
     printf ("-Área da cidade:%f \n", area);
     printf ("-PIB:%f \n", PIB);
