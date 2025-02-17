@@ -1,16 +1,23 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das cartas
+
+
 
 int main() {
+
+    // Área para definição das variáveis para armazenar as propriedades das cidades
+
     
-    char codigo1[1], codigo2[2];
-    char nome[20];
     float area;
+    char nome[15];
     int populacao;
     float PIB;
+    char codigo1[5], codigo2[5];
     int NPT;
     
+    // Área para entrada de dados
 
     printf ("Digite o nome da cidade: \n");
     scanf ("%s", &nome);
@@ -27,20 +34,21 @@ int main() {
     printf ("Digite o Número de pontos turísticos: \n");
     scanf ("%d", &NPT);
 
-    printf("Digite o Código do País: \n");
-    scanf ("%s", &codigo1);
+    printf("Digite o Código da Carta: \n");
+    scanf ("%s", &codigo1, &codigo2);
 
-    printf("Digite o Código da Cidade: \n");
-    scanf ("%s", &codigo2);
 
-    printf ("-Nome da Cidade:%s \n", nome);
-    printf ("-Código da cidade:%s \n", codigo1, codigo2);
+    // Área para exibição dos dados da cidade
+
+    printf ("-Nome da cidade:%s \n", nome);
     printf ("-População:%d \n", populacao);
-    printf ("-Área da cidade:%f \n", area);
-    printf ("-PIB:%f \n", PIB);
+    printf ("-Área da cidade:%.2f Km2 \n", area);
+    printf ("-PIB:%.2f Milhões \n", PIB);
     printf ("-Número de pontos turisticos:%d \n", NPT);
+    printf ("-Código da cidade:%s \n", codigo1, codigo2);
+    printf ("-Carta Cadastrada com Sucesso!!!");
     
 
 
-    return 0;
+    return 0;                                             
 }
